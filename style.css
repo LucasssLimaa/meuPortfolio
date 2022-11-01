@@ -19,6 +19,10 @@ header {
     color: white;
 }
 
+.contact a:hover{
+    opacity: 0.6;
+}
+
 /*.controls{
     margin-top: 0.5%;
     display: flex;
@@ -72,6 +76,7 @@ ul li a{
 ul li a:hover {
     font-size: 0.9em;
     color: red;
+    opacity: 0.6;
 }
 
 .about {
@@ -111,7 +116,7 @@ ul li a:hover {
 }
 
 .projects p{
-    width: 65%;
+    width: 60%;
 }
 
 .projects a, .projects a:visited{
@@ -120,8 +125,8 @@ ul li a:hover {
 }
 
 .projects a:hover {
+    opacity: 0.6;
     text-decoration: underline;
-    color: #f00;
 }
 
 .projects img{
