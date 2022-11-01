@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: roboto;
+    font-size: 1.2em;
+}
+
+header {
+    padding-right: 10%;
+    padding-left: 10%;
+    background-color: blueviolet;
+    display: flex;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title h2{
+    color: white;
+}
+
+/*.controls{
+    margin-top: 0.5%;
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.controls p a{
+    color: white;
+    text-decoration: none;
+
+    transition-property: all;
+    transition-duration: 400ms;
+}
+
+.controls p a:hover{
+    color: red;
+    font-size: 1.1em;
+}*/
+
+/*.controls {
+    border: 2px solid red;
+    margin-top: 0.5%;
+    display: flex;
+    width: 40%;
+}*/
+
+ul{ 
+    /*position: relative;
+    top: 50%;
+    transform: translateY(-50%);*/
+    list-style: none;
+    width: 40%;
+    text-align: right;
+}
+
+ul li {
+    display: inline-flex;
+    padding-left: 2%;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+
+    transition-property: all;
+    transition-duration: 400ms;
+}
+
+ul li a:hover {
+    font-size: 0.9em;
+    color: red;
+}
+
+.about {
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: white;
+    background-color: black;
+    display: flex;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.aboutImage img {
+    margin-top: 35%;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.contact a{
+    margin-right: 3%;
+}
+
+.projects{
+    color: white;
+    background-color: blueviolet;
+    padding-right: 10%;
+    padding-left: 10%;
+    display: flex;
+
+    flex-direction: column;
+}
+
+.projects p{
+    width: 65%;
+}
+
+.projects a, .projects a:visited{
+    color: wheat;
+    text-decoration: none;
+}
+
+.projects a:hover {
+    text-decoration: underline;
+    color: #f00;
+}
+
+.projects img{
+    border-radius: 10px;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(./assets/fonts/roboto/Roboto-Regular.ttf);
+}
