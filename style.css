@@ -118,10 +118,11 @@ header a:hover {
 }
 
 .projectTemplate{
+    padding-right: 10%;
+    padding-left: 10%;
     display: flex;
-
   
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
 }
 
