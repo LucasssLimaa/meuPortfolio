@@ -2,6 +2,8 @@ body {
     margin: 0;
     font-family: roboto;
     font-size: 1.2em;
+    /*gambiarra para resolver problema de cor entre as div*/
+    background-color: blueviolet;
 }
 
 header {
@@ -51,7 +53,7 @@ header {
     width: 40%;
 }*/
 
-ul{ 
+header ul{ 
     /*position: relative;
     top: 50%;
     transform: translateY(-50%);*/
@@ -60,12 +62,12 @@ ul{
     text-align: right;
 }
 
-ul li {
+header li {
     display: inline-flex;
     padding-left: 2%;
 }
 
-ul li a{
+header a{
     text-decoration: none;
     color: white;
 
@@ -73,7 +75,7 @@ ul li a{
     transition-duration: 400ms;
 }
 
-ul li a:hover {
+header a:hover {
     font-size: 0.9em;
     color: red;
     opacity: 0.6;
@@ -108,19 +110,55 @@ ul li a:hover {
 .projects{
     color: white;
     background-color: blueviolet;
-    padding-right: 10%;
-    padding-left: 10%;
-    display: flex;
-
-    flex-direction: column;
+    padding-bottom: 20%;
 }
 
-.projects p{
-    width: 60%;
+.projects h1 {
+    padding-left: 10%;
+}
+
+.projectTemplate{
+    display: flex;
+
+  
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.project{
+    background-color: antiquewhite;
+    border-radius: 10px;
+    width: 30%;
+    color: black;
+    text-align: center;
+    display: flex;
+
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.frameworks{
+    margin-top: 2%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.frameworks img{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.project p{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: auto;
+    width: 80%;
 }
 
 .projects a, .projects a:visited{
-    color: wheat;
+    padding: 0;
+    color: blue;
     text-decoration: none;
 }
 
@@ -129,8 +167,15 @@ ul li a:hover {
     text-decoration: underline;
 }
 
-.projects img{
+.projectImg{
     border-radius: 10px;
+
+    transition-property: all;
+    transition-duration: 400ms;
+}
+
+.projectImg:hover {
+    width: 95%;
 }
 
 @font-face {
