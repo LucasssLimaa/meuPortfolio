@@ -17,11 +17,11 @@ header {
     justify-content: space-between;
 }
 
-.title h2{
+.title h2 {
     color: white;
 }
 
-.contact a:hover{
+.contact a:hover {
     opacity: 0.6;
 }
 
@@ -53,7 +53,7 @@ header {
     width: 40%;
 }*/
 
-header ul{ 
+header ul {
     /*position: relative;
     top: 50%;
     transform: translateY(-50%);*/
@@ -67,7 +67,7 @@ header li {
     padding-left: 2%;
 }
 
-header a{
+header a {
     text-decoration: none;
     color: white;
 
@@ -92,22 +92,23 @@ header a:hover {
 
     flex-direction: row;
     align-items: center;
-    justify-content: center;
     justify-content: space-between;
 }
 
-.aboutImage img {
-    margin-top: 35%;
-    width: 250px;
-    height: 250px;
+.aboutText h1 {
+    margin: 0;
+}
+
+.profileImage img {
+    float: right;
     border-radius: 50%;
 }
 
-.contact a{
+.contact a {
     margin-right: 3%;
 }
 
-.projects{
+.projects {
     color: white;
     background-color: blueviolet;
     padding-bottom: 20%;
@@ -117,66 +118,90 @@ header a:hover {
     padding-left: 10%;
 }
 
-.projectTemplate{
+.cardsTemplate {
     padding-right: 10%;
     padding-left: 10%;
     display: flex;
-  
+
     justify-content: space-between;
     flex-direction: row;
 }
 
-.project{
-    background-color: antiquewhite;
-    border-radius: 10px;
+.card {
+    background-color: white;
     width: 30%;
+    border-radius: 10px;
     color: black;
     text-align: center;
-    display: flex;
 
-    justify-content: space-around;
+    display: flex;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
 }
 
-.frameworks{
-    margin-top: 2%;
+.passwordManager .cardFooter {
+    background-color: #34B297;
+}
+
+.churrascometro .cardFooter {
+    background-color: #F0C32A;
+}
+
+/*.cardImage{
+    background-image: url("./assets/images/projectImages/image_landing_page.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}*/
+
+.cardImage img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    transition-property: all;
+    transition-duration: 400ms;
+}
+
+/*.cardImage img:hover {
+    width: 105%;
+}*/
+
+.cardFooter {
+    background-color: palevioletred;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
     display: inline-flex;
     justify-content: center;
 }
 
-.frameworks img{
+.cardFooter img {
     margin-left: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     margin-right: 5%;
 }
 
-.project p{
+.card p {
     padding-top: 2%;
     padding-bottom: 2%;
     margin: auto;
     width: 80%;
 }
 
-.projects a, .projects a:visited{
+.card a,
+.card a:visited {
     padding: 0;
     color: blue;
     text-decoration: none;
 }
 
-.projects a:hover {
+.card a:hover {
     opacity: 0.6;
     text-decoration: underline;
-}
-
-.projectImg{
-    border-radius: 10px;
-
-    transition-property: all;
-    transition-duration: 400ms;
-}
-
-.projectImg:hover {
-    width: 95%;
 }
 
 @font-face {
