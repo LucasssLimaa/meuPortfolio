@@ -192,16 +192,61 @@ header a:hover {
     width: 80%;
 }
 
-.card a,
-.card a:visited {
+.card a, .card a:visited {
     padding: 0;
     color: blue;
     text-decoration: none;
+
+    transition-property: all;
+    transition-duration: 300ms;
 }
 
 .card a:hover {
     opacity: 0.6;
     text-decoration: underline;
+}
+
+.skills{
+    padding-right: 10%;
+    padding-left: 10%;;
+    color: white;
+}
+
+.skillsTemplate{
+    display: grid;
+
+    grid-template: auto auto auto auto auto / auto auto auto;
+    grid-gap: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill{
+    width: 110%;
+    text-align: center;
+   
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skillIcon{
+    height: 100%;
+}
+
+.skillText{
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill h2, img, progress{
+    
+    margin: 0;
+    padding: 0;
 }
 
 @font-face {
