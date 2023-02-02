@@ -201,13 +201,13 @@ footer {
     }
 
     .profileImage {
-        /*border: 2px solid red;*/
         padding-bottom: 5%;
     }
 
     .profileImage img {
         display: inline-flex;
-
+        width: 175px;
+        height: 175px;
     }
 
     .contact img {
