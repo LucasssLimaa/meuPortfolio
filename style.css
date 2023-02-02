@@ -9,18 +9,13 @@ header {
     padding-right: 10%;
     padding-left: 10%;
     background-color: #31639c;
-    display: flex;
-
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .title h2 {
     color: #FAF9F6;
 }
 
-.contact a{
+.contact a {
     transition-property: all;
     transition-duration: 300ms;
 }
@@ -72,7 +67,7 @@ header a:hover {
     margin: 0;
 }
 
-.aboutText{
+.aboutText {
     width: 55%;
 }
 
@@ -88,7 +83,6 @@ header a:hover {
 .projectsArea {
     color: #FAF9F6;
     background-color: #31639c;
-    /*padding-bottom: 10%;*/
 }
 
 .projectsArea h1 {
@@ -150,7 +144,7 @@ header a:hover {
     margin-right: 5%;
 }
 
-.projectLinks{
+.projectLinks {
     margin-top: 4%;
     margin-bottom: 6%;
 }
@@ -161,7 +155,8 @@ header a:hover {
     width: 80%;
 }
 
-.card a, .card a:visited {
+.card a,
+.card a:visited {
     padding: 0;
     color: blue;
     text-decoration: none;
@@ -173,7 +168,7 @@ header a:hover {
 .card a:hover {
     opacity: 0.6;
     font-size: 0.9em;
-    
+
 }
 
 footer {
@@ -188,4 +183,52 @@ footer {
 @font-face {
     font-family: roboto;
     src: url(./assets/fonts/roboto/Roboto-Regular.ttf);
+}
+
+@media screen and (max-width: 1023px) {
+
+    .title h2 {
+        text-align: center;
+    }
+
+    .aboutArea {
+        flex-direction: column-reverse;
+    }
+
+    .aboutText {
+        width: 90%;
+        text-align: center;
+    }
+
+    .profileImage {
+        /*border: 2px solid red;*/
+        padding-bottom: 5%;
+    }
+
+    .profileImage img {
+        display: inline-flex;
+
+    }
+
+    .contact img {
+        width: 15%;
+    }
+
+    #emailLogo {
+        width: 12.8%;
+    }
+
+    .projectsArea h1 {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .cardsTemplate {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 10%;
+    }
 }
